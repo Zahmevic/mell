@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+h1 {
+    font-family: 'Crete Round';
+}
+h2, h3 {
+    font-family: 'Rokkitt';
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+p, li {font-family: 'Quicksand';
+font-size: 20px;}
+body {
+    background-color: #FEF6C9;
+    margin: 20px;
+}
+header {
+    background-color: #725752;
+    color: white;
+    font-size: 50px;
+    height: 150px;
+    line-height: 150px;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+}
+
+li a:link {
+    color:#725752;
+    text-decoration: none;
+}
+li a:visited {
+    color: #96c0b7;
+}
+li a:hover {
+    color: #878e88;
+    text-decoration: underline;
+}
+li a:active {
+    color: #D4DFC7;
+    text-decoration: underline;
+}
+li {
+    line-height: 40px;
+}
