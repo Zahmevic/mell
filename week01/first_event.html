@@ -5,6 +5,13 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Portfolio - WDD 330</title>
         <link rel="stylesheet" href="week01/css/style.css">
+        <script>
+            function showCongratulations(theButtonClicked) {
+    document.getElementById('result_display').innerHTML =
+   'Congratulations, you did it!<p>You got the page to update!</p>'
+  
+  }
+        </script>
     </head>
     <body>
         <header>
@@ -12,9 +19,8 @@
         </header>
         <main>
             <h2>Activity</h2>
-            <button>Click me!</button>
-  <section id="result_display">
-  </section>
+            <button onclick="showCongratulations(this)">Click me!</button>
+            <section id="result_display"></section>
         </main>
     <footer></footer>
     <script src="js/main.js"></script>
