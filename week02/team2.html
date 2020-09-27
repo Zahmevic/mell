@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Web Frontend Development II at Brigham Young University - Idaho.">
+    <title>write</title>
+  <script>
+      function myFunction(){
+    const content = document.querySelector("input").value;
+    
+    
+    document.getElementById("task").innerHTML = content;
+      }
+    </script>
+    <script>
+      var n = document.getElementById('number').value;
+
+function inputText (n) {
+ for (i=n; i=<0, i--) {
+   var r= n + i;
+
+ }  
+ document.getElementById('result').innerHTML = r;
+}
+  </script>
+<script>
+    function myAddition(){
+    const content = parseFloat(document.getElementById("uno").value);
+    const contentDos = parseFloat(document.getElementById("dos").value);
+    
+    const output = content + contentDos;
+    
+    document.getElementById("suma").innerHTML = output;
+};
+
+mySubstraction = () => {
+    const content = parseFloat(document.getElementById("tres").value);
+    const contentDos = parseFloat(document.getElementById("cuatro").value);
+    
+    const output = content - contentDos;
+
+    document.getElementById("resta").innerHTML = output;
+};
+
+function myMulti(){
+    const content = parseFloat(document.getElementById("cinco").value);
+    const contentDos = parseFloat(document.getElementById("seis").value);
+    
+    const output = content * contentDos;
+    
+    document.getElementById("multi").innerHTML = output;
+};
+
+</script>
+</head>
+
+<body>
+    <section>
+    <input type="text"><br>
+    <button type="button" onclick="myFunction()">Click Me!</button> 
+   
+    <div id="task"></div>
+</section>
+<section>
+    <p>Write a number:</p>
+           <input type="text" id="number" name="number">
+           <button onclick='inputText()''>Click me</button>
+           <div id="result"></div>
+</section>
+<section>
+    <h1>Addition</h1>
+    <input type="text" id="uno">
+    <p>+</p>
+    <input type="text" id="dos">
+    <button type="button" onclick="myAddition()">Result</button>
+    <div id="suma"></div> 
+
+    <h1>Substraction</h1>
+    <input type="text" id="tres">
+    <button type="button" onclick="mySubstraction()">-</button>
+    <input type="text" id="cuatro">
+    <div id="resta"></div>
+
+    <h1>Multiplication</h1>
+    <input type="text" id="cinco">
+    <button type="button" onclick="myMulti()">*</button>
+    <input type="text" id="seis">
+    <div id="multi"></div>
+
+
+</section>
+</body>
+<script src="main.js"></script> 
+</html>
