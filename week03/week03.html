@@ -1,0 +1,262 @@
+<html>
+    <head>
+        <meta charset="UTF=-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Week 03 Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Week 03. Readings</h1>
+        </header>
+        <main>
+            <h2>JavaScript: Novice to Ninja</h2>
+            <h3>Reading</h3>
+            <h3>Chapter 5. "Objects"</h3>
+    <ul>
+        <li><strong>Object Literals.</strong> An object in JavaScript is a self-contained set of related values and functions.
+            They act as a collection of named properties that map to any JavaScript value
+            such as strings, numbers, booleans, arrays and functions. If a property’s value is a
+            function, it is known as a method.<br>
+            JavaScript objects are
+            similar to a hash or associative array in other programming languages (or even a
+            JavaScript map). They are, however, much more flexible, as they can be employed
+            to encapsulate code that can be reused throughout a program. They can also
+            inherit properties from other objects in a similar way to object-oriented languages.<br>
+            Objects are often used to keep any related information and functionality together
+            in the same place.<br>
+            An object literal is an object that is created directly in the language by wrapping
+            all its properties and methods in curly braces {}. Object literals are a
+            distinguishing feature of the JavaScript language, as they allow objects to be
+            created quickly without the need for defining a class. They also provide a useful
+            way of organizing your code without polluting the global namespace.<br>
+            All objects are mutable at any time when a program is running. This means that
+its properties and methods can be changed or removed, and new properties and
+methods can be added to the object, even if it was declared using const.
+</li><br>
+        <li><strong>Creating Objects.</strong> To create an object literal, simply enter a pair of curly braces. It’s also possible to create an object using a constructor function.<br>
+            This method is not recommended, however, and the object literal notation is the
+            preferred way of creating objects. The obvious reason is because it requires less
+            typing and provides a concise way of initializing an object and its properties in
+            one statement.<br>
+            You can access the properties of an object using the dot notation, this will return the value of that property. You can also access an object’s properties using bracket notation ― the property
+            is represented by a string inside square brackets, so needs to be placed inside
+            single or double quotation marks.<br>
+            Dot notation is much more common, but bracket notation has a few advantages:
+            it’s the only way to access nonstandard property and method names that don’t
+            follow the variable naming rules. It also lets you evaluate an expression and use it
+            as the property key. If you try to access a property that doesn’t exist, undefined will be returned.<br>
+            The ability to create objects with computed property keys was introduced in ES6.
+            This means that JavaScript code can be placed inside square brackets and the
+            property key will be the return value of that code. The value of a property has always been allowed to be a JavaScript expression.<br>
+            The new Symbol date type can also be used as a computed property key; you can access the property using the square bracket notation. A new property can be added to an object using a symbol as a key if the square
+            bracket notation is used. The symbols used for property keys are not limited to being used by only one
+            object - they can be reused by any other object.<br> Each symbol has a unique value, which means that using them as property keys
+            avoids any naming clashes if you mistakenly use the same value for two different
+            property keys. This might not seem likely in the examples we’ve seen so far, but
+            it can be a problem if you’re working with an object that has a large number of
+            properties or if other developers are also working with the code.</li><br>
+        <li><strong>Calling Methods.</strong> To call an object’s method we can also use dot or bracket notation. Calling a
+            method is the same as invoking a function, so parentheses need to be placed after
+            the method name.</li><br>
+        <li><strong>Checking if Properties or Methods Exists.</strong> The in operator can be used to check whether an object has a particular property. Alternatively, you could also check to see if the property or method doesn’t
+            return undefined.<br> Another way is to use the hasOwnProperty() method. As mentioned earlier,
+            objects can inherit properties from other objects, so all objects have a method
+            called hasOwnProperty(). This can be used to check whether an object has a
+            property that is its own, rather than one that has been inherited from another
+            object. This method will only return any properties that belong to that particular object,
+            whereas using in or !== undefined will return true, even if the property has
+            been inherited from another object.</li><br>
+        <li><strong>Finding all the Properties of and Object.</strong> We can loop through all of an object’s properties and methods by using a for in
+            loop. To make sure that only an object’s own properties are returned, a quick check can
+            be implemented beforehand.<br>
+            The Object.keys() method will return an array of all the keys of any object that
+            is provided as an argument. We can then iterate over this array to access all the
+            keys of an object. ES2017 also adds some the Object.values() that works in the same way, but
+            returns an array of all the object’s value.<br>
+            Object.entries() is also part of ES2017 and returns an array of key-value pairs.
+            These key-value pairs are returned in arrays, but they can be destructured and
+            accessed individually.<br>
+            New properties and methods can be added to objects at any time in a program.
+            This is done by simply assigning a value to the new property. It’s important to note that properties don’t always appear in the order they were
+            entered. An object is not an ordered list like an array, set or map, so you should
+            never rely on the properties being in a certain order.<br>
+            You can change the value of an object’s properties at any time using assignment.</li><br>
+        <li><strong>Removing Properties.</strong> Any property can be removed from an object using the delete operator. </li><br>
+        <li><strong>Nested Objects.</strong> It’s even possible for an object to contain other objects. These are known as nested objects. The values in nested objects can be accessed by referencing each property name
+            in order using either dot or bracket notation. You can even mix the different notations.<br>
+            An important concept is that objects are assigned by
+            reference. This means that if a variable is assigned to an object that already exists, it
+            will simply point to the exact same space in memory. So any changes made using
+            either reference will affect the same object. This doesn’t happen when primitive values are used instead of objects.<br>
+            An object literal can be passed as a parameter to a function. This is useful when
+            there are a large number of parameters, as it allows the arguments to be provided
+            by name and in any order. This means you don’t have to remember the order to
+            enter them when invoking a function. We can provide default values for some of the parameters using assignment. This technique is referred to as using named parameters and is often used when
+            a function has a large amount of optional parameters.<br>
+        THIS. The keyword this refers to the object that it is within. It can be used inside
+        methods to gain access to the object’s properties.</li><br>
+        <li><strong>Namespacing.</strong> Naming collisions occur when the same variable or function name is used for
+            different purposes by code sharing the same scope. A solution to this problem is to use the object literal pattern to create a
+            namespace for groups of related functions. This is done by creating an object
+            literal that serves as the namespace, then adding any values as properties of that
+            object, and any functions as methods.</li><br>
+        <li><strong>Built-in Objects.</strong>
+        <ul>
+            <li><strong>JSON.</strong> JavaScript Object Notation, or JSON, is an extremely popular lightweight data-storage format that is used by a
+                large number of services for data serialization and configuration. It is often used
+                to exchange information between web services, and is employed by sites such as
+                Twitter, Facebook and Trello to share information.
+                JSON is a string representation of the object literal notation, however, there are a couple of hey differences:<br><br>
+            <ol>
+                <li>Property names must be double-quoted</li>
+                <li>Permitted values are double-quoted strings, numbers, true, false, null, arrays
+                    and objects</li>
+                <li>Functions are not permitted values</li>
+            </ol><br><br>
+            The parse() method takes a string of data in JSON format and returns a
+            JavaScript object. The stringify() method does the opposite, taking a JavaScript object and
+            returning a string of JSON data. You can also add a space argument that will add new lines between each keyvalue pair, which is useful when displaying the results in a browser.<br>
+            JSON data is
+            easy to exchange between different services, as most languages and protocols are
+            able to interpret data as strings of text – and they only need to be stored as a basic
+            text file.</li><br>
+            <li><strong>The MATH Object.</strong> The Math object is a built-in object that has several properties representing
+                mathematical constants, as well as methods that carry out a number of common
+                mathematical operations. All the properties and methods of the Math object are immutable and unable to be
+                changed.
+                The Math object has eight properties that represent a mix of commonly used math
+constants. Note that they are all named in capital letters, as is the convention for
+constant values:<br><br>
+<ol>
+    <li>Math.PI (The ratio of the circumference and diameter of a circle)</li>
+    <li>Math.SQRT2 (The square root of 2)</li>
+    <li>Math.SQRT1_2 (The reciprocal of the square root of 2)</li>
+    <li>Math.E (Euler's Constant)</li>
+    <li>Math.LN2 (The natural logarithm of 2)</li>
+    <li>Math.LN10 (The natural logarithm of 10)</li>
+    <li>Math.LOG2E (Log base 2 of Euler's Constant)</li>
+    <li>Math.LOG10E (Log base 10 of Euler's Constant)</li>
+</ol><br><br>
+The Math object also has several methods to carry out a variety of useful
+mathematical operations.<br>
+The Math.abs() method returns the absolute value of a number. So if the number
+is positive, it will remain the same, and if it’s negative, it will become positive.</li><br>
+<li><strong>Rounding Methods.</strong> The Math.ceil() method will round a number up to the next integer, or remain
+    the same if it is already an integer.<br> The Math.floor() method will round a number down to the next integer, or
+    remain the same if it is already an integer.<br> The Math.round() method will round a number to the nearest integer.<br>ES6 also introduced the Math.trunc() method that returns the integer-part of a
+    number – that is, it gets truncated at the decimal point.</li><br>
+    <li><strong>Powers and Roots.</strong> The Math.exp() method will raise a number to the power of Euler’s constant. The Math.pow() method will raise any number (the first argument) to the power
+        of another number (the second argument).<br>
+        The Math.sqrt() method returns the positive square root of a number.<br>
+        The Math.cbrt() method was introduced in ES6, which returns the cube root of
+        numbers.<br>
+        The Math.hypot() method was also introduced in ES6. It returns the square root
+        of the sum of the squares of all its arguments. This can be used to calculate the
+        hypotenuse of a right-angled triangle.<br>
+        The Math.log() method returns the natural logarithm of a number. Logarithms in base 2 and 10 were added in ES6.
+        The Math.max() method returns the maximum number from its arguments; And the Math.min() method unsurprisingly returns the minimum number from
+            the given arguments.<br>
+            The Math object also has the standard trigonometric functions, which are very
+useful when working with geometrical objects. All angles are measured in radians
+for these functions.<br>
+Radians are a standard unit of angular measurement, equal to the angle of the
+circle’s center corresponding to the arc that subtends it.<br>
+The Math.sin() returns the sine of an angle.<br>
+The Math.cos() returns the cosine of an angle.<br>
+The Math.tan() returns the tangent of an angle.<br>
+The Math.asin() returns the arcsine of a number. The result is an angle.<br>
+The Math.acos() returns the arccosine of a number. The result is an angle<br>
+The Math.atan() returns the arctangent of a number. The result is an angle.<br>
+Methods for the hyperbolic functions, sinh(), cosh() and tanh() were also
+added in ES6, as well as their inverses.<br>
+The Math.random() method is used to create random numbers, which can be very
+useful when writing programs. Calling the method will generate a number
+between 0 (inclusive) and 1 (exclusive). To generate a random number between 0 and another number, we can multiply
+the value by that number. If we want to generate a random integer, we can use the Math.floor() method to remove the decimal part of the return value. </li><br>
+<li><strong>The Date Object.</strong> Date objects contain information about dates and times. Each object represents a
+    single moment in time.<br>
+    A constructor function is used to create a new date object using the new operator.<br>
+    To see what the date is, we use
+    the toString() method that all objects have.<br>
+    If an argument is not supplied, the date will default to the current date and time.
+    It’s possible to create Date objects for any date by supplying it as an argument to
+    the constructor function. This can be written as a string in a variety of forms.  However, in order to be more consistent, it’s better to provide each bit of
+    information about the date as a separate argument. The parameters that can be
+    provided are as follows:<br><br>
+<ol>
+    <li>new Date(year,month,day,hour,minutes,seconds,milliseconds). Remember that computer programs start counting at zero, so January is 0,
+        February is 1, and so on up to December, which is 11.</li><br>
+    <li>An alternative is to use a timestamp, which is a single integer argument that
+        represents the number of milliseconds since the Epoch (1st January 1970)</li>
+</ol><br>
+<ul>
+<li><strong>The Epoch.</strong> The Epoch is 1st January 1970. This is an arbitrary date that is used in
+    programming as a reference point in time from which to measure dates. This allows
+    dates to be expressed as an integer that represents the number of seconds since the
+    Epoch. It results in a very large number and there is a potential problem looming in
+    2038 when the number of seconds since the Epoch will be greater than
+    2,147,483,647, which is the maximum value that many computers can deal with as
+    a signed 32-bit integer. Fortunately, this problem will not affect JavaScript dates
+    because it uses floating-point numbers rather than integers, so it can handle bigger
+    values.</li></ul><br>
+    The properties of date objects are unable to be viewed or changed directly.
+    Instead, they have a number of methods known as getter methods, which return
+    information about the date object, such as the month and year.
+    Once you’ve created a date object it will have access to all the getter methods.
+    There are two versions of most methods – one that returns the information in
+    local time, and the other that uses Coordinated Universal Time (UTC). The
+    getTime(), getTimezoneOffset() and getYear() methods don’t have UTC
+    equivalents.<br><br>
+    <ul>
+        <li><strong>UTC.</strong> UTC is the primary time standard by which the world regulates clocks. It was
+            formalized in 1960 and is much the same as Greenwich Mean Time (GMT). The
+            main difference is that UTC is a standard that is defined by the scientific
+            community, unlike GMT.</li></ul><br> 
+            The getDay() and getUTCDay() methods are used to find the day of the week that
+            the date object falls on. It returns a number, starting at 0 for Sunday, up to 6 for
+            Saturday. The getDate() and getUTCDate()methods return the day of the month for the
+            date object (note that these values start counting from 1, not 0, so they return the
+            actual day of the month).<br><br>
+            The getMonth() and getUTCMonth() methods can be used to find the month of
+the date object. It returns an integer, but remember to count from 0; so January is
+0, February is 1, and so on up to December being 11. The getFullYear() and getUTCFullYear() methods return the year of the date
+object. There is also a getYear() method, but it isn’t Y2K compliant, so shouldn’t
+be used.<br><br>
+There are also getHours(), getUTCHours(), getMinutes(), getUTCMinutes(),
+getSeconds(), getUTCSeconds, getMilliseconds(), and getUTCMilliseconds()
+methods that will return the hours, minutes, seconds and milliseconds since
+midnight.
+The getTime() method returns a timestamp representing the number of
+milliseconds since the Epoch. This can be useful for incrementing dates by a set amount of time. For example, a
+day can be represented by 1000 * 60 * 60 * 24 milliseconds.<br><br>
+The getTimezoneOffset() method returns the difference, in minutes, between
+the local time on the computer and UTC.       
+</li>
+        </ul></li><br>
+        <li><strong></strong></li><br>   
+        <li><a href=""><strong></strong></a></li><br>
+        <li><a href=""><strong></strong></a></li><br>
+    </ul>
+            <h3>Chapter 6. ""</h3>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>   
+                <li><a href=""><strong></strong></a></li>
+                <li><a href=""><strong></strong></a></li>
+            </ul>
+            <h3>Chapter 7. ""</h3>
+            <ul>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>   
+                <li><a href=""><strong></strong></a></li>
+                <li><a href=""><strong></strong></a></li>
+            </ul>
+            <h3>Team Activity</h3>
+<p><a href=""></a></p>
+        </main>
+        <footer></footer>
+    </body>
+</html>
