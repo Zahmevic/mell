@@ -146,6 +146,7 @@ console.log(oldest);
       //6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
       //https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
       //goto the link above and open the console. Paste the following two lines in.  That will create a list of links in memory that you can reference through the console. Use that list to finish the problem.
+
       /*const category = document.querySelector('.mw-category');
       const links = Array.from(category.querySelectorAll('a'));
       const de = links
@@ -156,16 +157,22 @@ console.log(oldest);
       // 7. sort Exercise
       // Sort the people alphabetically by last name
       //mi codigo:
-const last = people.sort((a, b) => people.b + ' ' + people.a);
-console.log(last);
+/*const last = people.sort((a, b) => people.b + ' ' + people.a);
+console.log(last);*/
 
 /*una opcion:
 const alpha = people.sort((lastOne, nextOne) => {
-  const [aLast, aFirst] = lastOne.split[', '];
-  const [bLast, bFirst] = nextOne.split[', '];
+  const [aLast, aFirst] = lastOne.split(', ');
+  const [bLast, bFirst] = nextOne.split(', ');
   return aLast > bLast ? 1 : -1;
 });
 console.log(alpha);*/
+const alpha = people.sort((lastOne, nextOne) => {
+      const [aLast, aFirst] = lastOne.split(', ');
+      const [bLast, bFirst] = nextOne.split(', ');
+      return aLast > bLast ? 1 : -1;
+    });
+    console.log(alpha);
       // 8. Reduce Exercise
       // Sum up the instances of each of these
       const data = [
