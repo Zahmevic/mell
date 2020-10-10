@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+    background-color: #ffffd5;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #b9273b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 95px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Rokkitt';
+    font-size: 80px;
+    padding-left: 40px;
+    font-style: italic;
+    margin: 0;
+}
+h2 {margin: 0;
+font-family: 'Crete Round';
+color: white;
+padding-left: 40px;}
+.h2 {
+    background-color: #ff3355;
+    line-height: 60px;
+    margin-top: 0;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    background-color: white;
+    margin: 100px;
+    box-shadow: 5px 5px 15px #ff3355, -5px -5px 15px #ff3355;
+}
+
+#one, #four, #seven {
+    grid-column: 1;
+    border-right: 3px solid black;
+}
+#two, #five, #eight {
+    grid-column: 2;
+    border-right: 3px solid black;
+}
+#three, #six, #nine {
+    grid-column: 3;
+}
+#four, #five, #six, #seven, #eight, #nine {
+    border-top: 3px solid black;
+}
+p {
+    text-align: center;
+    line-height: 20px;
+    font-size: 100px;
+}
+.o {
+    position: absolute;
+}
+#one .o, #two .o, #three .o {
+top: 200px;}
+
+#two .o, #five .o, #eight .o {
+    left: 640px;
+}
+#three .o, #six .o, #nine .o {
+    left: 1020px;
+}
+#four .o, #five .o, #six .o {
+    top: 400px;
+}
+#one .o, #four .o, #seven .o {
+    left: 250px;
+}
+#seven .o, #eight .o, #nine .o {
+    top: 600px;
+}

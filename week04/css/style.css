@@ -13,7 +13,7 @@ h2 {
 h3 {
     font-size: 25px;
 }
-p, li {font-family: 'Quicksand';
+p, li, form, button, select {font-family: 'Quicksand';
 font-size: 20px;}
 body {
     background-color: #FEF6C9;
