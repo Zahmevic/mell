@@ -55,29 +55,23 @@ main div {
 #four, #five, #six, #seven, #eight, #nine {
     border-top: 3px solid black;
 }
-p {
-    text-align: center;
-    line-height: 20px;
-    font-size: 100px;
-}
-.o {
-    position: absolute;
-}
-#one .o, #two .o, #three .o {
-top: 200px;}
 
-#two .o, #five .o, #eight .o {
-    left: 640px;
+button {
+    color: #b9273b;
+    border: solid 3px #b9273b;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 30px;
+    background-color: white;
+    line-height: 50px;
+    padding: 20px;
 }
-#three .o, #six .o, #nine .o {
-    left: 1020px;
+button a {
+    text-decoration: none;
 }
-#four .o, #five .o, #six .o {
-    top: 400px;
+
+main {
+    margin: 50px;
+
 }
-#one .o, #four .o, #seven .o {
-    left: 250px;
-}
-#seven .o, #eight .o, #nine .o {
-    top: 600px;
-}
+
