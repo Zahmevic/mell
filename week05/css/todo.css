@@ -22,6 +22,7 @@ main {
     border-right: 1px solid #f05d5e;
     background-image: url(https://img.freepik.com/vector-gratis/fondo-kawaii-fruta-jugosa_6997-1678.jpg?size=626&ext=jpg);
     font-family: 'Quicksand';
+    height: 300px;
 }
 footer {
     background-color: #f05d5e;
@@ -34,4 +35,7 @@ footer p {
     margin-top: 0;
     text-align: center;
     font-family: 'Quicksand';
+}
+tbody {
+    margin: 10px;
 }
