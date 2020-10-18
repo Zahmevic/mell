@@ -34,7 +34,8 @@ const hikeList = [
     }
   ];
   
-  const imgBasePath = "//byui-cit.github.io/cit261/examples/";
+  
+  /*const imgBasePath = "//byui-cit.github.io/cit261/examples/";
   //on load grab the array and insert it into the page
   window.addEventListener("load", () => {
     showHikeList();
@@ -69,4 +70,17 @@ const hikeList = [
   
     return item;
   }
-  
+  */
+ // Hike Model
+export default class HikeModel {
+  constructor() {
+    // We need a constructor...but in this case it isn't doing much
+  }
+  getAllHikes() {
+    // should return a list of all the hikes.
+  }
+  getHikeByName(hikeName) {
+    // filter the hikes for the record identified by hikeName and return it
+    return ;
+  }
+}
