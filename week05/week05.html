@@ -11,24 +11,84 @@
         </header>
         <main>
             <h2>JavaScript: Novice to Ninja</h2>
-            <h3>Chapter 10. ""</h3>
-            <p></p>
-            <ul>
-                <li><a href=""><strong></strong></a></li>
-                <li><a href=""><strong></strong></a></li>
-            </ul>
-            <h3>Chapter . ""</h3>
-            <p></p>
+            <h3>Chapter 10. "Testing and Debugging"</h3>
+            <p>Errors and bugs are a fact of life in programming ― they will always be there.
+                In this chapter I learned about:
+            </p>
+            <ol>
+                <li><strong>Errors, Exceptions and Warnings. </strong>
+                <ul><li><strong>Exceptions.</strong> Exceptions are errors that produce a return value that can then be used by the program to deal with the error.</li><br>
+                    <li><strong>Stack Traces. </strong>Is something that an exception produce.This is a sequence of functions or
+                        method calls that lead to the point where the error occurred. A stack trace will work
+                        backwards from the point at which the error occurred to identify the original
+                        function or method that started the sequence.</li><br>
+                    <li><strong>Warnings.</strong> A warning can occur if there’s an error in the code that isn’t enough to cause the
+                            program to crash. This means the program will continue to run after a warning.
+                            This can be problematic, since the issue that produced
+                            the warning may cause the program to continue running incorrectly.</li><br>
+                </ul></li><br>
+                <li><strong>The Importance of Testing and Debugging. </strong> A programmer should ensure that the code they write fails
+                    loudly in development so any errors can be identified and fixed quickly. A programmer should try to make the code fail gracefully, so the
+                    user experience is not affected, if possible. This is achieved by making sure
+                    exceptions are caught and dealt with, and code is tested rigorously.</li><br>
+                <li><strong>Strict Mode. </strong>Strict Mode procudes more exceptions and warnings, and prohibits the use of some deprecated features. Writing code in strict mode can help improve its clarity and speed, and encourages a better quality of Javascript to be written.<br>
+                        Strict mode simply requires the following string to be added to the first line of a
+                        JavaScript file:
+                        <strong>'use strict';</strong>
+                    <ul><li><strong>Linting Tools. </strong>Linting tools such as JS Lint, JS Hint, and ES Lint can be used to test the
+                            quality of JavaScript code, beyond simply using strict mode. They are designed to
+                            highlight any sloppy programming practices or syntax errors, and will complain
+                            if certain style conventions are not followed, such as how code is indented. Linting tools
+                            are also useful for enforcing a programming style guide.</li><br></ul></li><br>
+                <li><strong>Feature Detection. </strong>The recommended way to determine browser support for a feature is to use
+                                feature detection. This is done using an if statement to check whether an object
+                                or method exists before trying to actually call the method. Feature detection guarantees that the method is only
+                                called if it actually exists and fails gracefully, without any exceptions being
+                                thrown, if the method doesn’t exist.</li><br>
+                <li><strong>Debugging in the Browser. </strong>Debugging is the process of finding out where bugs occur in the code and then
+                                    dealing with them. In many cases, the point at which an error occurs is not
+                                    always where it originated, so you’ll need to run through the program to see
+                                    what’s happening at different stages of its execution.<br>
+                        <ul><li><strong>The Trusty Alert. </strong> The most basic form of debugging is to use the <i>alert()</i> method to show a dialog
+                            at certain points in the code. Because alert() stops a program from running until
+                            OK is clicked, it allows us to effectively put breakpoints in the code that let us
+                            check the value of variables at that point to see if they’re what we expect them to
+                            be. Using alerts for debugging was the only option in the past, but JavaScript
+                            development has progressed since then and their use is discouraged for
+                            debugging purposes today.</li><br>
+                        <li><strong>Using the Console. </strong>Most modern JavaScript environments have a console object that provides a
+                            number of methods for logging information and debugging. It’s not officially part
+                            of the ECMAScript specification, but is well supported in all the major browsers
+                            and Node.js. We can use <i>console.log()</i> to
+                            log the value of variables at different stages of the program, and/or <i>console.trace()</i> to log an interactive stack trace in the
+                            console.</li>
+                        <li><strong>Debugging Tools.</strong> Most modern browsers also have a debugging tool that allows you to set
+                            breakpoints in your code that will pause it at certain points. You can then see the
+                            values of all the variables at those points and modify them. This can be very
+                            useful when trying to track down bugs./li></ul></li><br>
+                <li><strong>Error Objects. </strong>An error object can be created by the host environment when an exception
+                    occurs, or it can be created in the code using a constructor function.</li><br>
+                    <ul><li><strong>Throwing Exceptions. </strong>It’s also possible to throw your own exceptions using the
+                        throw statement. This will allow for any problems in your code to be highlighted
+                        and dealt with, rather than lurk quietly in the background.
+                        The throw statement can be applied to any JavaScript expression, causing the
+                        execution of the program to stop.</li></ul><br>
+                <li><strong>Exception Handling. </strong>When an exception occurs, the program terminates with an error message. This is
+                    ideal in development as it allows us to identify and fix errors. In production,
+                    however, it will appear as if the program has crashed. </li><br>
+                <li><strong>Tests. </strong>Testing is an important part of programming that can often be overlooked. Writing
+                    good tests means your code will be less brittle as it develops, and any errors will
+                    be identified early on.
+                <ul><li><strong>Test-driven Development. </strong>Test-driven development(TDD) is the process of writing tests before any actual
+                    code. Test-driven development is considered to be best practice, but in reality you’ll
+                    find most developers tend to be more pragmatic when it comes to writing tests.</li>
+                <li><strong>Testing Frameworks. </strong>Testing
+                    frameworks provide a structure to write meaningful tests and then run them.</li>
+                <li><strong>Jest. </strong>Jest is a TDD framework, created by Facebook, that has gained a lot of
+                    popularity recently. It makes it easy to create and run tests by providing helper
+                    methods for common test assertions.</li></ul></li><br>
+</ol>
 
-            <h3>Ninja Project</h3>
-            <ul>
-                <li><a href="ninja.html"><strong>Ninja Quiz Project</strong></a></li>
-            </ul>
-            
-            <h3>Team Activity</h3>
-<ul>
-    <li><a href="hiking.html"></a></li>
-</ul>
         </main>
         <footer></footer>
     </body>
