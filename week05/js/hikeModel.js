@@ -35,7 +35,7 @@ const hikeList = [
   ];
   
   
-  /*const imgBasePath = "//byui-cit.github.io/cit261/examples/";
+  const imgBasePath = "//byui-cit.github.io/cit261/examples/";
   //on load grab the array and insert it into the page
   window.addEventListener("load", () => {
     showHikeList();
@@ -70,7 +70,7 @@ const hikeList = [
   
     return item;
   }
-  */
+  
  // Hike Model
 export default class HikeModel {
   constructor() {
