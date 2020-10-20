@@ -23,6 +23,7 @@ main {
     background-image: url(https://img.freepik.com/vector-gratis/fondo-kawaii-fruta-jugosa_6997-1678.jpg?size=626&ext=jpg);
     font-family: 'Quicksand';
     height: 300px;
+
 }
 footer {
     background-color: #f05d5e;
@@ -36,6 +37,58 @@ footer p {
     text-align: center;
     font-family: 'Quicksand';
 }
-tbody {
+#header {
+   display: flex;
+padding: 10px;
+background-color: #fff6a0;
+}
+#header label {
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+#header input {
+    height: 20px;
+    margin-left: 10px;
+    color: #f05d5e;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#header button {
+    height: 25px;
+    padding: 5px;
+    margin-left: 5px;
+    background-color: #f05d5e;
+    border-radius: 5px;
+    font-weight: bolder;
+    border: 2px solid #f05d5e;
+}
+#table {
+    text-align: center;
+    background-color: white;
     margin: 10px;
+    border: 2px solid #f05d5e;
+    width: 94%;
+    border-radius: 5px;
+}
+tr {
+display: flex;
+width: 100%;
+}
+td {
+    padding: 10px;
+}
+.complete {
+    background-color: #f4fded;
+}
+
+span {
+    padding: 10px;
+    border-radius: 5px;
+}
+span:hover {
+    background-color: #f05d5e;
+    color: #fff6a0;
+    font-weight: bolder;
 }
