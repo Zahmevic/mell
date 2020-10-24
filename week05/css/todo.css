@@ -22,8 +22,7 @@ main {
     border-right: 1px solid #f05d5e;
     background-image: url(https://img.freepik.com/vector-gratis/fondo-kawaii-fruta-jugosa_6997-1678.jpg?size=626&ext=jpg);
     font-family: 'Quicksand';
-    height: 300px;
-
+    padding-bottom:10px;
 }
 footer {
     background-color: #f05d5e;
@@ -41,6 +40,7 @@ footer p {
    display: flex;
 padding: 10px;
 background-color: #fff6a0;
+border-radius: 10px;
 }
 #header label {
     font-size: 20px;
@@ -68,14 +68,15 @@ background-color: #fff6a0;
 #table {
     text-align: center;
     background-color: white;
-    margin: 10px;
+    margin:10px;
     border: 2px solid #f05d5e;
     width: 94%;
     border-radius: 5px;
 }
-tr {
+#table tr {
 display: flex;
 width: 100%;
+line-height:15px;
 }
 td {
     padding: 10px;
@@ -83,13 +84,47 @@ td {
 .complete {
     background-color: #f4fded;
 }
-
 span {
     padding: 10px;
     border-radius: 5px;
 }
 span:hover {
     background-color: #f05d5e;
-    color: #fff6a0;
+    color: #ffffff;
     font-weight: bolder;
 }
+span:active {
+    background-color: #fff6a0;
+    color: #f05d5e;
+}
+.active {
+    background-color: #f05d5e;
+    color: #fff6a0;
+}
+.wrap {
+    padding-top:5px;
+    margin: 0;
+    width: 100%;
+    line-height: 35px;
+}
+ ul.tabs {
+     width:85%;
+     margin: 10px auto;
+     line-height: 35px;
+     background-color: white;
+     list-style: none;
+    display: flex;
+    border: solid 2px #f05d5e;
+    border-radius: 10px;
+ }
+ ul.tabs li {
+     width: 25%;
+ }
+ ul.tabs li a {
+     text-decoration: none;
+     font-size: 18px;
+     color: #f05d5e;
+     font-weight: bold;
+ }
+
+

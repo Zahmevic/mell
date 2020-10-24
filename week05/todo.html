@@ -11,14 +11,24 @@
             <h1>To-do List</h1>
         </header>
         <main>
-<div class="container">
+<div class="wrap">
+<ul class="tabs">
+    <li><a href="#all"><span>All</span></a></li>
+    <li><a href="#active"><span>Active</span></a></li>
+    <li><a href="#"><span>Complete</span></a></li>
+</ul>
+<div class="sections">
+<div id="all">
     <div id="header">
         <label for="">Note: </label>
         <input type="text" placeholder="Introduce something" id="input">
         <button id="button">Add</button>
     </div>
-    <table id="table"></table>
+    <table id="table"></table></a>
 </div>
+<div id="active"></div>
+<div id="complete"></div>
+</div>     
         </main>
         <footer>
 <p>Melissa Zahori de Vazquez Molina | WDD 330 |BYU-Idaho Online Program</p>
