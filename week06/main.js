@@ -82,9 +82,8 @@ function saveLocalTodos(todo) {
         todos = JSON.parse(localStorage.getItem('todos'));
     }
 
-    todos.push('todo');
-    localStorage.setItem('todos', JSON.stringify('todos'));
-
+    todos.push(todo);
+    localStorage.setItem('todos', JSON.stringify(todos));
 }
 
 function getTodos(){
@@ -94,7 +93,7 @@ function getTodos(){
     } else {
         todos = JSON.parse(localStorage.getItem('todos'));
     }
-    todos.forEach(function(todo){
+    todos.forEach(function(todo) {
         const todoDiv = document.createElement('div');
         todoDiv.classList.add("todo");
         
@@ -128,4 +127,3 @@ function getTodos(){
    todos.splice(todos.indexOf(todoIndex), 1); 
    localStorage.setItem('todos', JSON.stringify(todos));
  }
-
