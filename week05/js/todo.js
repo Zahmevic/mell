@@ -23,8 +23,10 @@ function borrar(event){
 function complete(event){
     if(this.event.target.checked){
         this.event.target.parentElement.parentElement.classList.add("complete");
+
     } else {
         this.event.target.parentElement.parentElement.classList.remove("complete");
     }
     }
+
 

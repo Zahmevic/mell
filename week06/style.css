@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg,#ffd9da, #ea638c);
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-kawaii-fruta-jugosa_6997-1678.jpg?size=626&ext=jpg);
+    font-family: 'Quicksand';
+}
+
+header {
+    font-size: 30px;
+    color: white;
+    background-color: #f05d5e;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: 1px solid #f05d5e;
+    border-radius: 10px 25px;
+    margin-left: 5px;
+    background-color: white;
+}
+
+form button {
+    background-color: #f05d5e;
+    color: white;
+    /*cursor: pointer;*/
+}
+form button:hover {
+    background-color: white;
+    color: #89023e;
+}
+
+.todo-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: #f05d5e;
+    font-size: 15px;
+    display: flex;
+    font-weight: bolder;
+    justify-content: space-between;
+    align-items: center;   
+    border: 2px solid #f05d5e;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.deleted-btn {
+    background-color: #f05d5e;
+    color: #fff6a0;
+    border: none;
+    padding: 1rem;
+    font-size: 15px;
+    font-family: 'Quicksand';
+}
+.completed-btn {
+    background-color: #fff6a0;
+    color: #f05d5e;
+    border: none;
+    padding: 1rem;
+    font-size: 15px;
+    font-family: 'Quicksand';
+}
+.completed-btn:hover {
+    background-color: #f05d5e;
+    color: #fff6a0;
+    font-weight: bolder;
+}
+.deleted-btn:hover {
+    background-color: #fff6a0;
+    color: #f05d5e;
+    font-weight: bolder;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #89023e;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-zppearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #89023e;
+    width: 10rem;
+    padding: 1rem;
+    background-color: #fff6a0;
+    border-radius: 10px 25px;
+    border: 1px solid #f05d5e;
+}
+
+.select::after {
+    position: absolute;
+    background: #ffd9da;
+    color: #89023e;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+.select:hover::after {
+    background: #89023e;
+    color: #ffd9da;
+}
+.wrap {
+    padding-top:5px;
+    margin: 0;
+    width: 100%;
+    line-height: 35px;
+}
+ ul#tabs {
+     width:85%;
+     margin: 10px auto;
+     line-height: 35px;
+     background-color: white;
+     list-style: none;
+    display: flex;
+    border: solid 2px #ea638c;
+    border-radius: 10px;
+ }
+ ul#tabs li {
+     width: 25%;
+ }
+ ul#tabs li a {
+     text-decoration: none;
+     font-size: 18px;
+     color: #89023e;
+     font-weight: bold;
+ }
+
