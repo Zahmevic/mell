@@ -1,38 +1,31 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+    
     <head>
-        <meta charset="UTF=-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>To.do List application</title>
+        <title>To-Do List</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="css/todo.css">
     </head>
+    
     <body>
-        <header>
-            <h1>To-do List</h1>
-        </header>
-        <main>
-<div class="wrap">
-<ul class="tabs">
-    <li><a href="#all"><span>All</span></a></li>
-    <li><a href="#active"><span>Active</span></a></li>
-    <li><a href="#"><span>Complete</span></a></li>
-</ul>
-<div class="sections">
-<div id="all">
-    <div id="header">
-        <label for="">Note: </label>
-        <input type="text" placeholder="Introduce something" id="input">
-        <button id="button">Add</button>
-    </div>
-    <table id="table"></table></a>
-</div>
-<div id="active"></div>
-<div id="complete"></div>
-</div>     
-        </main>
-        <footer>
-<p>Melissa Zahori de Vazquez Molina | WDD 330 |BYU-Idaho Online Program</p>
-        </footer>
-        <script src="js/todo.js"></script>
+        <div class="container">
+            <h1>To-do list</h1>
+            
+            <div class="add-elements">
+                <input id="add" type="text" placeholder="add an element">
+                <button id="btn">Add</button>
+            </div>
+            
+            <div class="element-list">
+                <ul id="list">
+                    <li>buy some milk</li>
+                    <li>do your home work</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <script src="js/to-do.js"></script>
     </body>
+    
 </html>

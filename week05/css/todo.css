@@ -1,130 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand&display=swap');
 
-body {
-    margin: 0 auto;
-    width: 300px;
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
-header {
-    background-color: #f05d5e;
-    font-family: 'Indie Flower';
-    font-size: 25px;
-    color: white;
-    font-style: italic;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+body{
+    background-color: #f5f5f5;
 }
-header h1 {
-    margin-bottom: 0;
-    padding-left: 10px;
-}
-main {
-    border-left: 1px solid #f05d5e;
-    border-right: 1px solid #f05d5e;
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-kawaii-fruta-jugosa_6997-1678.jpg?size=626&ext=jpg);
-    font-family: 'Quicksand';
-    padding-bottom:10px;
-}
-footer {
-    background-color: #f05d5e;
-    color: white;
-    font-family:;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-footer p {
-    margin-top: 0;
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fafafa;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+    width: 460px;
+    height: 680px;
     text-align: center;
-    font-family: 'Quicksand';
+    font-family: 'Nunito',sans-serif;
+   
 }
-#header {
-   display: flex;
-padding: 10px;
-background-color: #fff6a0;
-border-radius: 10px;
+h1{
+    margin: 12px 0;
 }
-#header label {
-    font-size: 20px;
-    font-weight: bolder;
+.add-elements{
+    margin: 12px 0;
     
 }
-#header input {
-    height: 20px;
-    margin-left: 10px;
-    color: #f05d5e;
-    border: 2px solid black;
-    border-radius: 5px;
+input{
+    padding: 6px 4px;
+    width: 70%;
+}
+button{
+    padding: 7px 14px;
+    background-color: #00b0ff;
+    border: none;
+    border-radius: 4px;
+    color: #fafafa;
+
+}
+.element-list{
+    height: 550px;
+    overflow-y: scroll
+}
+ul{
+    padding: 15px;
+   
+}
+li{
+    list-style: none;
+    padding: 10px 5px;
+    background-color: #fff;
+    margin: 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+    border-radius: 3px;
+    transition: .4s;
+}
+button:hover{
+    background-color: #1565c0;
 }
 
-#header button {
-    height: 25px;
-    padding: 5px;
-    margin-left: 5px;
-    background-color: #f05d5e;
-    border-radius: 5px;
-    font-weight: bolder;
-    border: 2px solid black;
-    color: white;
+li:hover{
+    background-color: #e0e0e0;
 }
-#table {
-    text-align: center;
-    background-color: white;
-    margin:10px;
-    border: 2px solid #f05d5e;
-    width: 94%;
-    border-radius: 5px;
-}
-#table tr {
-display: flex;
-width: 100%;
-line-height:15px;
-}
-td {
-    padding: 10px;
-}
-.complete {
-    background-color: #f4fded;
-}
-span {
-    padding: 10px;
-    border-radius: 5px;
-}
-span:hover {
-    background-color: #f05d5e;
-    color: #ffffff;
-    font-weight: bolder;
-}
-span:active {
-    background-color: #fff6a0;
-    color: #f05d5e;
-}
-.active {
-    background-color: #f05d5e;
-    color: #fff6a0;
-}
-.wrap {
-    padding-top:5px;
-    margin: 0;
-    width: 100%;
-    line-height: 35px;
-}
- ul.tabs {
-     width:85%;
-     margin: 10px auto;
-     line-height: 35px;
-     background-color: white;
-     list-style: none;
-    display: flex;
-    border: solid 2px #f05d5e;
-    border-radius: 10px;
- }
- ul.tabs li {
-     width: 25%;
- }
- ul.tabs li a {
-     text-decoration: none;
-     font-size: 18px;
-     color: #f05d5e;
-     font-weight: bold;
- }
 
-
+.checked{
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
