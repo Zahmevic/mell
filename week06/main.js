@@ -92,23 +92,28 @@ function getTodos(){
         todos = JSON.parse(localStorage.getItem('todos'));
     }
         todos.forEach(function(todo){
-        const todoDiv = document.createElement('div');
+        
+            const todoDiv = document.createElement('div');
         todoDiv.classList.add("todo");
-        const newTodo = document.createElement('li');
+        
+    const newTodo = document.createElement('li');
         newTodo.innerText = todo;
         newTodo.classList.add('todo-item');
         todoDiv.appendChild(newTodo);
+
         const completedButton = document.createElement('button');
         completedButton.innerText = 'completed';
         completedButton.classList.add("completed-btn");
         todoDiv.appendChild(completedButton);
+   
         const deletedButton = document.createElement('button');
         deletedButton.innerText = 'Delete';
         deletedButton.classList.add("deleted-btn");
         todoDiv.appendChild(deletedButton);
+        
         todoList.appendChild(todoDiv);
     });
-};
+}
  function removeTodos (todo) {
     let todos;
     if(localStorage.getItem('todos') === null){
