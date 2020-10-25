@@ -107,7 +107,8 @@ form button:hover {
 
 .completed {
     text-decoration: line-through;
-    color: #89023e;
+    color: white;
+    background-color: #f05d5e;
 }
 
 select {
