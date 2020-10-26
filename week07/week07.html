@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF=-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Week 07 Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Week 07. Readings</h1>
+        </header>
+        <main>
+            <h2>JavaScript: Novice to Ninja</h2>
+            <h3>Chapter 11. "Further Functions"</h3>
+<p>The fact that functions are first-class objects means they can have properties and
+    methods themselves. For example, all functions have a length property that
+    returns the number of parameters the function has.</p><br>
+    <p>The call() method can be used to set the value of this inside a function to an
+        object that is provided as the first argument. The apply() method works in the same way, except the arguments of the
+        function are provided as an array, even if there is only one argument.</p><br>
+    <p>If a function takes some time to compute a return value, we can save the result in
+        a cache property. Then if the same argument is used again later, we can return the
+        value from the cache, rather than having to compute the result again. This is called as Memoization.</p><br>
+    <p>An Immediately Invoked Function Expression (IIFE), is
+        an anonymous function that is invoked as soon as it’s
+        defined. This is easily achieved by placing parentheses at the end of the function
+        definition. The function also
+        has to be made into an expression, which is done by placing the whole
+        declaration inside parentheses.</p><br>
+    <p>There is no way to remove a variable from a scope once it’s been declared. Placing any code that uses the temporary variable inside an IIFE will ensure it’s
+        only available while the IIFE is invoked, then it will disappear. An IIFE can be used to set up any initialization code that there’ll be no need for
+        again.</p><br>
+    <p>practices. One of the problems with simply placing 'use strict' at the
+        beginning of a file is that it will enforce strict mode on all the JavaScript in the
+        file, and if you’re using other people’s code, there’s no guarantee that they’ve
+        coded in strict mode.
+        To avoid this, the recommended way to use strict mode is to place all your code
+        inside an IIFE.</p><br>
+    <p></p><br>
+    <p></p><br>
+<h2>Team activity: </h2>
+<ul>
+    <li><a href="hiking.html">Hiking App</a></li>
+</ul>
+        </main>
+        <footer></footer>
+    </body>
+</html>
