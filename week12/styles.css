@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Tangerine&display=swap");
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Tangerine";
+  font-size: 50px;
+  color: white;
+  background-color: #7b1859;
+  padding: 20px;
+  line-height: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+main {
+  background-color: #4f80cf;
+  padding: 20px;
+  border: 1px solid #7b1859;
+}
+
+#date {
+  font-family: "Tangerine";
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #feea52;
+}
+
+textarea::placeholder {
+  font-family: "Tangerine";
+}
+
+textarea {
+  background-image: url(https://bgfons.com/upload/paper_grid_PNG5412.png);
+  width: 90%;
+  height: 100px;
+  padding-left: 20px;
+  border: none;
+  font-family: "Quicksand";
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#button {
+  margin: 10px;
+  background-color: #feea52;
+  color: #3acfb4;
+  border-radius: 10px;
+  font-family: "Quicksand";
+  padding: 10px;
+  border: none;
+  border-right: 1px solid #7b1859;
+  border-bottom: solid 1px #7b1859;
+}
+
+select {
+  background-color: #feea52;
+}
+
+/*# sourceMappingURL=styles.css.map */
