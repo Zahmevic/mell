@@ -11,9 +11,13 @@
         <h1>Sweet Friend</h1>
     </header>
    <main>
-    <span class="date" id="date"></span><script src="date.js"></script>
+    <span class="date" id="date"></span>
+    <form id="form" class="form">
+        <label id="title">Tittle: </label>
+        <input type="text" name="title" id="input-title">
         <textarea placeholder="Dear Sweet Friend..." id="new"></textarea>
         <input type="button" id="button" value="Add" onclick="addSelect()">
+    </form>
         <select id="notes"></select>
    </main> 
    <script src="localStorage.js"></script>

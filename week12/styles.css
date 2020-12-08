@@ -61,4 +61,14 @@ select {
   background-color: #feea52;
 }
 
+#title {
+  color: #feea52;
+  font-family: "Quicksand";
+}
+
+#input-title {
+  border-radius: 5px;
+  padding: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */

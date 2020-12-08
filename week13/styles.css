@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Tangerine&display=swap");
+
+a {
+    font-family: 'Tangerine';
+}
+.card {
+    background-image: url(https://i.pinimg.com/originals/a6/34/c4/a634c46eb5d8b4cc6c2c961d77afd27d.jpg);
+    border: 2px solid #7b1859;
+}
+button {
+    background: #feea52;
+    border: none;
+    border-radius: 5px;
+    color: #4f80fc;
+    border-bottom: 1px solid #3acfb4;
+    border-right: 1px solid #3acfb4;
+}
+.cards {
+    border-radius: 5px;
+    border: 2px solid #7b1859;
+    margin-top: 10px;
+    width: 100%;
+}
+.card.body {
+    padding: 2px;
+}
+.first {
+    font-family: 'Tangerine';
+    font-size: 50px;
+margin: 0;
+}
+.second {
+    font-family: 'Quicksand';
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.btn-info {
+    color: #ffffff;
+    background: #e56c8e;
+    border: none;
+}
+.btn-danger {
+background: #4f80fc;
+border: none;
+}
+#date {
+    font-family: "Tangerine";
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #feea52;
+  }

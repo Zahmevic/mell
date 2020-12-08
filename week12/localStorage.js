@@ -10,14 +10,44 @@
 
 //}
 
+let daynames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+];
+let month = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+];
 
+let d = new Date();
+let dayName = daynames[d.getDay()];
+let monthName = month[d.getMonth()];
+let year = d.getFullYear();
+let fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + year;
+
+document.getElementById("date").textContent = fulldate;
+
+//para llenar el select
 function addSelect() {
-    const note = document.getElementById('new').value;
+    const note = document.getElementById('input-title').value;
 const select = document.getElementById('notes');
-const date = document.getElementById('date').value;
-
-for (i = 0; i < note.length; i++) {
-select.options[i] = new Option(date + ': ' + note);
+for (i = 0; i < note; i++) { 
+select.options[i] = new Option(note);
 }
 };
         
