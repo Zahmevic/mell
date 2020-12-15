@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calendar</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8bb6d524d0.js" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          Sweet Friend
+        </a>
+      </nav>
+    <main>
+    <h1 class="title">Sweet Friend</h1>
+    <div class="calendar">
+        <div class="calendar-info">
+        <div class="calendar-prev" id="prev-month"><i class="fas fa-caret-left"></i></div>
+        <div class="calendar-month" id="month"></div>
+        <div class="calendar-year" id="year"></div>
+        <div class="calendar-next" id="next-month"><i class="fas fa-caret-right"></i></div>
+    </div> 
+
+    <div class="calendar-week">
+        <div class="calendar-day calendar-item">Mon</div>
+        <div class="calendar-day calendar-item">Tue</div>
+        <div class="calendar-day calendar-item">Wen</div>
+        <div class="calendar-day calendar-item">Thu</div>
+        <div class="calendar-day calendar-item">Fri</div>
+        <div class="calendar-day calendar-item">Sat</div>
+        <div class="calendar-day calendar-item">Sun</div>
+    </div>
+
+    <div class="calendar-dates" id="dates"></div>
+</div>
+  <div class="container">
+      <div class="row pt-5">
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-body">
+                      <form id="formTask">
+                          <div class="form-group">
+                            <h1>Sweet Friend</h1>
+                            <span class="date" id="date"></span>
+                              <input type="text" id="title" placeholder="Add your title" class="form-control">
+                          </div>
+<div class="form-group">
+    <textarea id="description" rows="8" cols="80" class="form-control" placeholder="Sweet friend..."></textarea>
+</div>
+<button type="submit" class="btn-btn-primary btn-block">
+    Save
+</button>
+                      </form>
+
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-8">
+              <div id="notes"></div>
+          </div>
+      </div>
+  </div>
+</main>
+<script src="calendar.js"></script>
+<script src="date.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
