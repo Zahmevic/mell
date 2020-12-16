@@ -23,7 +23,8 @@ h3 {
     font-size: 25px;
 }
 p, 
-li {
+li,
+div {
     font-family: 'Quicksand';
 font-size: 20px;
 color: white;
