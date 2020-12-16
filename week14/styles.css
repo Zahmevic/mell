@@ -8,25 +8,37 @@
 body {
     background: black;
     width: 100%;
+    color: white;
 }
-
 main {
 width: 90%;
 height: 100%;
 margin: 30px auto;
-    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/17265wide.jpg);  
 }
-h1, div {
-    color: white;
-}
+
 h1 {
     font-family: 'Tangerine';
     text-align: center;
+    font-size: 50px;
 }
-div {
+h2 {
     font-family: 'Quicksand';
-    font-size: 10px;
+}
+#search {
+    padding: 10px;
+    line-height: 10px;
+    color: #ffffff;
+    background-color: #3acfb4;
+    margin: 10px;
+    font-size: 15px;
+}
+div, p {
+    font-family: 'Quicksand';
+    font-size: 15px;
     text-align: center;
+}
+img {
+    width: 100%;
 }
 .calendar-info {
     display: flex;
@@ -52,6 +64,7 @@ font-size: 1.4em;
     grid-template-columns: repeat(7,1fr);
     grid-gap: 10px;
 }
+
 .calendar-item {
     text-align: center;
     line-height: 2;
@@ -70,64 +83,110 @@ font-size: 1.4em;
 .last-days {
     opacity: 0%;
 }
-a {
-    font-family: 'Tangerine';
+/*esto es lo de las notas y el textarea*/
+form {
+    margin: 20px 0;
 }
-.card {
-    background: none;
-    border: 2px solid #3acfb4;
+form input {
+border-radius: 10px;
+padding: 5px;
+font-family: 'Quicksand';
+font-size: 20px;
 }
-button {
-    background: #4f80fc;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    border-bottom: 1px solid #3acfb4;
-    border-right: 1px solid #3acfb4;
-}
-.cards {
-    border-radius: 5px;
-    border: 2px solid #3acfb4;
-    margin-top: 10px;
-    width: 100%;
-}
-.card.body {
-    padding: 2px;
-}
-.first {
-    font-family: 'Tangerine';
-    font-size: 50px;
-margin: 0;
-}
-.second {
+.clear,
+form button {
+    color: #E0C200;
+    background-color: black;
     font-family: 'Quicksand';
     font-size: 20px;
-    margin: 0;
-    margin-bottom: 10px;
-}
-.btn-info {
-    color: #ffffff;
-    background: #e56c8e;
+    padding: 5px;
+    border-radius: 5px;
     border: none;
+    border-right: solid 1px white;
+    border-bottom: solid 1px white;
+    margin: 20px 0;
 }
-.btn-danger {
-background: #4f80fc;
-border: none;
+.todo-item {
+    min-width: 30%;
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 0rem 0.5rem;
 }
-#date {
-    font-family: "Tangerine";
-    font-size: 35px;
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.todo {
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    border-radius: 5px;
     margin-bottom: 20px;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+.complete-btn,
+.trash-btn {
+background-color: black;
+color: white;
+font-size: 20px;
+padding: 1em;
+  cursor: pointer;
+}
+.completed {
+    text-decoration: line-through;
+  opacity: 0.5;
+}
+form select {
+    font-family: 'Quicksand';
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+  /*la musica*/
+  iframe {
+      margin: 20px 14px;
+      width: 90%;
+      border-radius: 10px;
+  }
+  /*el conteo regresivo*/
+  #clock {
+      background-image: url(https://i.pinimg.com/originals/3e/fc/f1/3efcf114689e2f9695a8bf6cb330f70c.jpg);
+      padding: 5px;
+      border-radius: 10px;
+      margin-top: 20px;
+      font-size: 100px;
+      color: black;
+      font-family: 'Tangerine';
+  }
+  /*goals*/
+  .my-goals {
+      margin-top: 30px;
   }
 @media only screen and (min-width: 768px) {
-
+main {
+    display: grid;
+grid-template-columns: 1fr 1fr; 
+}
+.title {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.nasa {
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
     a {
     margin-left: 5%;
 }
 .calendar {
     padding-left: 20px;
     width: 90%;
+    grid-column: 2/3;
+    grid-row: 2;
 }
 .calendar-info,
 .calendar-month,
@@ -135,7 +194,32 @@ border: none;
     font-size: 30px;
     font-family: 'Tangerine';
 }
+.calendar-week {
+    font-size: 35px;
+}
 #date {
     font-size: 20px;
 }
+iframe {
+    margin: 20px 30px;
+    grid-column: 2/3;
+    grid-row: 3;
+}
+.clock {
+    grid-column: 1/3;
+    grid-row: 6;
+}
+.my-goals {
+    grid-column: 2/3;
+    grid-row: 4;
+}
+form {
+        margin: 20px;
+}
+form input
+{
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
 }

@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Calendar</title>
 </head>
 <body>
     <script src="https://kit.fontawesome.com/8bb6d524d0.js" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-          Sweet Friend
-        </a>
-      </nav>
     <main>
+
     <h1 class="title">Sweet Friend</h1>
+    <div class="nasa">
+        <h2>Nasa API</h2>
+        <p>Astronomy Picture of the Day</p>
+        <button id="search">Show it!</button>
+    
+    <div id="content"></div>
+</div>
     <div class="calendar">
         <div class="calendar-info">
         <div class="calendar-prev" id="prev-month"><i class="fas fa-caret-left"></i></div>
@@ -36,36 +38,38 @@
 
     <div class="calendar-dates" id="dates"></div>
 </div>
-  <div class="container">
-      <div class="row pt-5">
-          <div class="col-md-4">
-              <div class="card">
-                  <div class="card-body">
-                      <form id="formTask">
-                          <div class="form-group">
-                            <h1>Sweet Friend</h1>
-                            <span class="date" id="date"></span>
-                              <input type="text" id="title" placeholder="Add your title" class="form-control">
-                          </div>
-<div class="form-group">
-    <textarea id="description" rows="8" cols="80" class="form-control" placeholder="Sweet friend..."></textarea>
-</div>
-<button type="submit" class="btn-btn-primary btn-block">
-    Save
-</button>
-                      </form>
-
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-8">
-              <div id="notes"></div>
-          </div>
-      </div>
+<div class="my-goals">
+<h1>My goal of this day is:</h1>
+<form>
+    <input type="text" class="input" placeholder="Add a goal" />
+    <button class="button" type="submit">Add it
+    </button>
+    <div class="select">
+      <select name="todos" class="filter">
+        <option value="all">All</option>
+        <option value="active">Uncompleted</option>
+        <option value="completed">Completed</option>
+      </select>
+    </div>
+  </form>
+  <div class="todo-container">
+    <ul class="list"></ul>
   </div>
+  <button class="clear">Clear all goals</button>
+</div> 
+<div class="clock">
+<h1>2021 is coming in:</h1>
+<div id="clock">
+</div> 
+</div>
+    
+  <!--
+  <iframe src="https://open.spotify.com/embed/playlist/6EORdlxyxzTFaA2ZJlHnpO" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>-->
 </main>
 <script src="calendar.js"></script>
-<script src="date.js"></script>
-<script src="app.js"></script>
+<script src="nasa.js"></script>
+<script src="countdown.js"></script>
+<script src="goals.js"></script>
+<script src="localStorage.js"></script>
 </body>
 </html>
