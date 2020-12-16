@@ -16,5 +16,5 @@ async function sendApiRequest(){
 
 function useApiData(data) {
 document.querySelector("#content").innerHTML += `<img src="${data.url}">`
-document.querySelector("#content").innerHTML += `<iframe src="${data.url} width="100%" height="500px"></iframe>`
+document.querySelector("#content").innerHTML += `<iframe src="${data.url} width="100%" height="100%"></iframe>`
 }
