@@ -151,6 +151,7 @@ form select {
       margin: 20px 14px;
       width: 90%;
       border-radius: 10px;
+      height: 250px;
   }
   /*el conteo regresivo*/
   #clock {
@@ -203,7 +204,8 @@ grid-template-columns: 1fr 1fr;
 iframe {
     margin: 20px 30px;
     grid-column: 2/3;
-    grid-row: 3;
+    grid-row: 3/4;
+    height: 350px;
 }
 .clock {
     grid-column: 1/3;
