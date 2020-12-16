@@ -8,7 +8,6 @@ formButton.addEventListener("click", addTask);
 todoList.addEventListener("click", deleteTask);
 filter.addEventListener("click", filterList);
 
-// ADD TASK, DELETE TASK AND FILTER LIST
 function addTask(e) {
   e.preventDefault();
   const toDo = input.value;
@@ -82,8 +81,6 @@ function filterList(e) {
     }
   });
 }
-
-// RETRIVE FROM LOCAL STORAGE
 function getLocalStorage() {
   let todos;
   if (localStorage.getItem("todos") === null) {

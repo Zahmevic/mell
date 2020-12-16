@@ -1,11 +1,9 @@
-// CLEAR LOCAL STORAGE
 const clear = document.querySelector(".clear");
 clear.addEventListener("click", function () {
   localStorage.clear();
   location.reload();
 })
 
-// SET TO LOCAL STORAGE
 function toLocalStorage(todo) {
   let todos;
   if (localStorage.getItem("todos") === null) {
@@ -17,7 +15,6 @@ function toLocalStorage(todo) {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-// REMOVE FROM LOCAL STORAGE
 function removeLocalStorage(todo) {
   let todos;
   if (localStorage.getItem("todos") === null) {
