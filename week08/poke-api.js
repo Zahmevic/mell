@@ -1,29 +1,46 @@
-const requestURL = 'https://swapi.dev/api/people/1';
+const requestURL = "https://pokeapi.co/api/v2/pokemon/";
 
 fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const json = jsonObject['page'];
-    for (let i = 0; i < json.length; i++ ) {
-      let starWars = document.createElement('section');
-let h2 = document.createElement('h2');
-let h3 = document.createElement('h3');
-let h4 = document.createElement('h4');
+.then(function(response) {
+  return response.json();
+})
+.then(function(jsonObject){
+//console.table(jsonObject);
+  const pokemon = jsonObject['results'];
+
+  pokemon.forEach(pokemon => {
+    let card = document.createElement('section');
+    let h2 = document.createElement('h2');
+ 
+    h2.textContent = `${pokemon.name}`;
+
+    card.appendChild(h2);
+
+    document.querySelector('div.cards').appendChild(card);
+    
+  });
+});
 
 
-h2.textContent = name;
-//h3.textContent = abilities[i].ability[i];
-//h4.textContent = abilities[i].ability.is_hidden;
+const URL = "https://swapi.dev/api/people";
 
+fetch(URL)
+.then(function(response) {
+  return response.json();
+})
+.then(function(jsonObject){
+//console.table(jsonObject);
+  const sw = jsonObject['results'];
 
-json.appendChild(h2);
-//json.appendChild(h3);
-//json.appendChild(h4);
+  sw.forEach(sw => {
+    let card = document.createElement('section');
+    let h2 = document.createElement('h2');
 
+    h2.textContent = `${sw.name}`;
 
-document.querySelector('div.starWars').appendChild(starWars);
-    }
-  })
+    card.appendChild(h2);
+
+    document.querySelector('div.stars').appendChild(card);
+    
+  });
+});

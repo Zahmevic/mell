@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
 h1 {
     font-family: 'Crete Round';
 }
@@ -13,35 +21,35 @@ h2 {
 h3 {
     font-size: 25px;
 }
-p, li {font-family: 'Quicksand';
-font-size: 20px;}
-body {
-    background-color: #FEF6C9;
-    margin: 20px;
+p, 
+li {
+    font-family: 'Quicksand';
+font-size: 20px;
+color: white;
 }
+
 header {
-    background-color: #725752;
-    color: white;
+    color: #ffde0a;
     font-size: 50px;
     height: 150px;
     line-height: 150px;
     padding: 20px;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/originals/e9/da/49/e9da4941169daa46caaf0524526ad882.jpg);
 }
 header h1 {
     margin: 0;
 }
-ul li {
-    line-height: 25px;
-}
+
 li a:link, p a:link {
-    color:#725752;
+    color:#89023e;
     text-decoration: none;
 }
 li a:visited, p a:visited {
-    color: #96c0b7;
+    color: #fff4ad;
 }
 li a:hover, p a:hover {
-    color: #878e88;
+    color: #ffd9da;
     text-decoration: underline;
 }
 li a:active, p a:active {
