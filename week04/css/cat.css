@@ -6,14 +6,12 @@ body {
     background-color: #ffffd5;
     margin: 0 auto;
 }
-
 header {
     background-color: #b9273b;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 95px;
 }
-
 h1 {
     color: white;
     font-family: 'Rokkitt';
@@ -31,47 +29,69 @@ padding-left: 40px;}
     line-height: 60px;
     margin-top: 0;
 }
-
-main div {
+.grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 200px);
-    background-color: white;
-    margin: 100px;
-    box-shadow: 5px 5px 15px #ff3355, -5px -5px 15px #ff3355;
-}
-
-#one, #four, #seven {
-    grid-column: 1;
-    border-right: 3px solid black;
-}
-#two, #five, #eight {
-    grid-column: 2;
-    border-right: 3px solid black;
-}
-#three, #six, #nine {
-    grid-column: 3;
-}
-#four, #five, #six, #seven, #eight, #nine {
-    border-top: 3px solid black;
-}
-
-button {
-    color: #b9273b;
-    border: solid 3px #b9273b;
-    border-radius: 10px;
-    font-size: 30px;
-    margin: 30px;
-    background-color: white;
-    line-height: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    max-width: 200px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item:nth-child(1){
+      border-right:1px solid black;
+      border-bottom:1px solid black;
+  }
+  .grid-item:nth-child(2){
+    border-left:1px solid black;
+    border-right:1px solid black;
+    border-bottom:1px solid black;
 }
-button a {
-    text-decoration: none;
+.grid-item:nth-child(3){
+    border-left:1px solid black;
+    border-bottom:1px solid black;
+}
+.grid-item:nth-child(4){
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+}
+.grid-item:nth-child(5){
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+    border-left:1px solid black;
+}
+.grid-item:nth-child(6){
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    border-left:1px solid black;
+}
+.grid-item:nth-child(7){
+    border-top:1px solid black;
+    border-right:1px solid black;
+}
+.grid-item:nth-child(8){
+    border-top:1px solid black;
+    border-right:1px solid black;
+    border-left:1px solid black;
+}
+.grid-item:nth-child(9){
+    border-top:1px solid black;
+    border-left:1px solid black;
 }
 
+.playerX{
+    background-color: #b9273b;
+    border-radius: 50%;
+}
+.playerO{
+    background-color: #ff3355;
+}
 main {
     margin: 50px;
-
 }
 

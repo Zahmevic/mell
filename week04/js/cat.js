@@ -1,19 +1,25 @@
-/*document.querySelector(".o").addEventListener("click", myFunction);
+document.addEventListener('DOMContentLoaded', () => {
+  const squares = document.querySelectorAll('.grid div')
+  const playerDisplay = document.querySelector('#player')
 
-function myFunction() {
+  let currentPlayer = 'playerX'
 
-  document.querySelector(".o").innerHTML = "O";
+  squares.forEach(square => {
+    square.addEventListener('click', clickOutcome)
+  })
 
-}*/
-const cell = ;
-const playerOne = "O";
-const playerTwo = "X";
-cell.forEach((element) => {
-  element.addEventListener('click', () => myFunction(element));
-});
+  function clickOutcome(e) {
+    const squareArray = Array.from(squares)
+    const index = squareArray.indexOf(e.target)
+    playerDisplay.innerHTML = currentPlayer
 
-function myFunction() {
-  document.querySelector(".grid-item").innerHTML = playerOne;
-}
-cell.addEventListener('click', myFunction);
+    if(currentPlayer === 'playerX') {
+      squares[index].classList.add('playerX')
+      currentPlayer = 'playerO'
+    } else {
+      squares[index].classList.add('playerO')
+      currentPlayer = 'playerX'
+    }
+  }
+})
 
